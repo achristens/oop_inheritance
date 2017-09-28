@@ -26,8 +26,9 @@ puts me.inspect
 me.add_quote("The grass is always greener")
 me.add_quote("Raining like cats and dogs")
 me.add_quote("The pot calling the kettle black")
-#
-# QuoteCollector.share_quote
+
+puts QuoteCollector.all_quotes
+
 me.travel_to("India")
 me.share_quote
 me.travel_to("Italy")
