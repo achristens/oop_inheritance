@@ -7,7 +7,8 @@ class MathGenius < Multilinguist
     list.each do |i|
       sum += i
     end
-    puts "The total is #{sum}"
+    
+    puts say_in_local_language("The total is #{sum}")
   end
 
 end
