@@ -28,6 +28,7 @@ class Multilinguist
     params = {query: {fullText: 'true'}}
     response = HTTParty.get("#{COUNTRIES_BASE_URL}/#{country_name}", params)
     json_response = JSON.parse(response.body)
+    # json_response.first['iso639_1']
     json_response.first['languages'].first['iso639_1']
   end
 
